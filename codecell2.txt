@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Celular {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner in=new Scanner(System.in);
+        double o,p1,n1,p2,n2,p3,n3,x,y,z;
+        String s1,s2,s3;
+        o=in.nextDouble();
+        s1=in.next();
+        p1=in.nextDouble();
+        n1=in.nextDouble();
+        s2=in.next();
+        p2=in.nextDouble();
+        n2=in.nextDouble();
+        s3=in.next();
+        p3=in.nextDouble();
+        n3=in.nextDouble();
+        x=n1/p1;
+        y=n2/p2;
+        z=n3/p3;
+        if (p1>o && p2>o && p3>o) {
+        	System.out.println("O meu celular nem esta tao ruim assim");
+        } else if (x>=y && x>=z) {
+        	System.out.println("Comprarei o celular " + s1);
+        } else if (y>x && y>=z) {
+        	System.out.println("Comprarei o celular " + s2);
+        } else if (z>x && z>y) {
+        	System.out.println("Comprarei o celular " + s3);
+        }
+	}
+
+}
